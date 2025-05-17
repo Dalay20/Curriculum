@@ -1,99 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum de Diego Alay – Estudiante de Ingeniería en Computación</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 2rem;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-        header, section {
-            margin-bottom: 2rem;
-        }
-        h1, h2 {
-            color: #2c3e50;
-        }
-        .skills span {
-            display: inline-block;
-            background-color: #e0e0e0;
-            padding: 0.3em 0.6em;
-            margin: 0.2em;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Currículum de Diego Alay – Estudiante de Ingeniería en Computación</title>
 
-<header>
+  <!-- 🔧 CORREGIDO: Estilos forzados para el mapa -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header, section {
+      margin-bottom: 2rem;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    .skills span {
+      display: inline-block;
+      background-color: #e0e0e0;
+      padding: 0.3em 0.6em;
+      margin: 0.2em;
+      border-radius: 4px;
+    }
+    #map {
+      height: 400px !important; /* 🔧 fuerza altura del mapa */
+      width: 100% !important;
+      margin-top: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+    }
+  </style>
+
+  <!-- 🔧 CORREGIDO: moved script tag inside <head> -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-VfllE9BTxN1wD0F+Mk7aHblFh1ObJiSA2tK54IdCVEM="
+    crossorigin=""
+  />
+</head>
+
+<body>
+  <header>
     <h1>Diego Alay</h1>
     <h2>Estudiante de Ingeniería en Computación</h2>
-</header>
+  </header>
 
-<section>
+  <section>
     <h2>Resumen Profesional</h2>
     <p>
-        Estudiante de Ingeniería en Computación con sólida base en desarrollo de software, estructuras de datos y algoritmos.Busco oportunidades para crecer profesionalmente en empresas tecnológicas innovadoras.
+      Estudiante de Ingeniería en Computación con sólida base en desarrollo de software, estructuras de datos y algoritmos. Busco oportunidades para crecer profesionalmente en empresas tecnológicas innovadoras.
     </p>
-</section>
+  </section>
 
-<section>
+  <section>
     <h2>Habilidades Técnicas</h2>
     <div class="skills">
-        <span>Python</span>
-        <span>Java</span>
-        <span>HTML/CSS</span>
-        <span>SQL</span>
-        <span>Git/GitHub</span>
+      <span>Python</span>
+      <span>Java</span>
+      <span>HTML/CSS</span>
+      <span>SQL</span>
+      <span>Git/GitHub</span>
     </div>
-</section>
+  </section>
 
-<section>
+  <section>
     <h2>Proyectos Destacados</h2>
     <ul>
-        <li><strong>Sistema de Gestión de Tareas</strong> – Aplicación web full-stack usando React y Node.js para organizar tareas personales (2024).</li>
-        <li><strong>Clasificador de Imágenes</strong> – Proyecto con Python y TensorFlow para identificar objetos en imágenes con red neuronal convolucional (2023).</li>
+      <li><strong>Sistema de Gestión de Tareas</strong> – Aplicación web full-stack usando React y Node.js para organizar tareas personales (2024).</li>
+      <li><strong>Clasificador de Imágenes</strong> – Proyecto con Python y TensorFlow para identificar objetos en imágenes con red neuronal convolucional (2023).</li>
     </ul>
-</section>
+  </section>
 
-<section>
+  <section>
     <h2>Experiencia</h2>
-    <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br>
-    Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
-</section>
+    <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br />
+      Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
+  </section>
 
-<section>
+  <section>
     <h2>Educación</h2>
-    <p><strong>
-Escuela Superior Politécnica del Litoral</strong><br>
-    Ingeniería en Computación (2022 – actual)</p>
-</section>
+    <p><strong>Escuela Superior Politécnica del Litoral</strong><br />
+      Ingeniería en Computación (2022 – actual)</p>
+  </section>
 
-<section>
+  <section>
     <h2>Cursos y Certificaciones</h2>
     <ul>
-        <li>Curso Profesional de Desarrollo Web – Platzi (2024)</li>
-        <li>Python para Ciencia de Datos – Coursera (2023)</li>
+      <li>Curso Profesional de Desarrollo Web – Platzi (2024)</li>
+      <li>Python para Ciencia de Datos – Coursera (2023)</li>
     </ul>
-</section>
+  </section>
 
-<section>
+  <section>
     <h2>Idiomas</h2>
     <ul>
-        <li>Español – Nativo</li>
-        <li>Inglés – Intermedio alto (B2)</li>
+      <li>Español – Nativo</li>
+      <li>Inglés – Intermedio alto (B2)</li>
     </ul>
-</section>
+  </section>
 
-<section>
+  <section>
     <h2>Contacto</h2>
-    <p>Email: dalay@espo.edu.ec<br>
-    GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
-</section>
+    <p>Email: dalay@espo.edu.ec<br />
+      GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
+  </section>
 
+  <section>
+    <h2>📍 Mapa interactivo - Mi ubicación profesional</h2>
+    <p>Este mapa muestra la ubicación de la Escuela Superior Politécnica del Litoral (ESPOL).</p>
+    <div id="map"></div>
+  </section>
+
+  <!-- 🔧 CORREGIDO: JavaScript justo antes de cerrar </body> -->
+
+  <!-- Leaflet JS -->
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-o9N1jE8l9wr6MogF+ZjdnGvZ1MYlN+ZQ+AyF2GZ8lrk="
+    crossorigin=""
+  ></script>
+
+  <!-- Script de Leaflet -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const espolCoords = [-2.1479, -79.9677];
+
+      const map = L.map('map').setView(espolCoords, 16);
+
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '© OpenStreetMap contributors'
+      }).addTo(map);
+
+      L.marker(espolCoords)
+        .addTo(map)
+        .bindPopup('<b>ESPOL</b><br>Escuela Superior Politécnica del Litoral.')
+        .openPopup();
+    });
+  </script>
 </body>
 </html>
