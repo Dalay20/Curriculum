@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Currículum de Diego Alay – Estudiante de Ingeniería en Computación</title>
-
-  <!-- 🔧 CORREGIDO: Estilos forzados para el mapa -->
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -27,24 +25,14 @@
       margin: 0.2em;
       border-radius: 4px;
     }
-    #map {
-      height: 400px !important; /* 🔧 fuerza altura del mapa */
-      width: 100% !important;
-      margin-top: 1rem;
+    iframe {
+      width: 100%;
+      height: 400px;
       border: 2px solid #ccc;
       border-radius: 8px;
     }
   </style>
-
-  <!-- 🔧 CORREGIDO: moved script tag inside <head> -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-VfllE9BTxN1wD0F+Mk7aHblFh1ObJiSA2tK54IdCVEM="
-    crossorigin=""
-  />
 </head>
-
 <body>
   <header>
     <h1>Diego Alay</h1>
@@ -79,14 +67,14 @@
 
   <section>
     <h2>Experiencia</h2>
-    <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br />
-      Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
+    <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br>
+    Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
   </section>
 
   <section>
     <h2>Educación</h2>
-    <p><strong>Escuela Superior Politécnica del Litoral</strong><br />
-      Ingeniería en Computación (2022 – actual)</p>
+    <p><strong>Escuela Superior Politécnica del Litoral</strong><br>
+    Ingeniería en Computación (2022 – actual)</p>
   </section>
 
   <section>
@@ -107,41 +95,19 @@
 
   <section>
     <h2>Contacto</h2>
-    <p>Email: dalay@espo.edu.ec<br />
-      GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
+    <p>Email: dalay@espo.edu.ec<br>
+    GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
   </section>
 
   <section>
-    <h2>📍 Mapa interactivo - Mi ubicación profesional</h2>
-    <p>Este mapa muestra la ubicación de la Escuela Superior Politécnica del Litoral (ESPOL).</p>
-    <div id="map"></div>
+    <h2>📍 Ubicación</h2>
+    <p>Puedes encontrarme en la Escuela Superior Politécnica del Litoral, Guayaquil - Ecuador.</p>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.023651929019!2d-79.97238991114499!3d-2.1446260000000037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1747503626074!5m2!1ses!2sec" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </section>
-
-  <!-- 🔧 CORREGIDO: JavaScript justo antes de cerrar </body> -->
-
-  <!-- Leaflet JS -->
-  <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-o9N1jE8l9wr6MogF+ZjdnGvZ1MYlN+ZQ+AyF2GZ8lrk="
-    crossorigin=""
-  ></script>
-
-  <!-- Script de Leaflet -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const espolCoords = [-2.1479, -79.9677];
-
-      const map = L.map('map').setView(espolCoords, 16);
-
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '© OpenStreetMap contributors'
-      }).addTo(map);
-
-      L.marker(espolCoords)
-        .addTo(map)
-        .bindPopup('<b>ESPOL</b><br>Escuela Superior Politécnica del Litoral.')
-        .openPopup();
-    });
-  </script>
 </body>
 </html>
