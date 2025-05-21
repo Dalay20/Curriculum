@@ -73,4 +73,14 @@ section {
     padding: 1.5% 0.8%;
      /* Margen inferior ajustado */
     margin-bottom: 1.2rem;
+
+     /* borde redondeado con un radio de 5 píxeles */
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   
+   /* sombra a un elemento */
+   -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
