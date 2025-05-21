@@ -1,0 +1,76 @@
+/* Aplica la fuente a todos los elementos */
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+
+    /* Alineación del texto */
+    text-align: center;
+
+    /* Grosor de la fuente negrita */
+    font-weight: bold;
+    font-family: 'Tangerine', serif;
+        font-size: 48px;
+
+}
+#photo {
+
+    /* Ancho del elemento */
+    width: 8vw;
+
+    /* Alto del elemento */
+    height: auto;
+}
+
+.subtitle {
+
+    /* Color del texto en rgba */
+    color: rgb(151 156 165 / 0.89);
+
+    /* Transformación del texto a mayúsculas */
+    text-transform: uppercase;
+}
+
+h2 {
+
+    /* Alineación del texto */
+    text-align: center;
+
+    /* Grosor de la fuente negrita */
+    font-weight: bold;
+
+    font-family: 'Tangerine', serif;
+        font-size: 48px;
+
+}
+
+footer p {
+
+    /* Alineación del texto a la derecha */
+    text-align: right;
+
+    /* Estilo de fuente itálica */
+    font-style: italic;
+
+}
+
+nav > ul {
+
+    /* Eliminar los estilos de lista predeterminados */
+    list-style: none;
+
+}
+section {
+    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+    border: 0.2pt solid #cedddd;
+    /* margen (espacio externo) superior, derecho, abajo e izquierda */
+    margin: 4px 2px 8px 2px;
+     /* relleno (espacio interno) de
+    1.5% en la parte superior e inferior y
+    0.8% a los lados derecho e izquierdo. */
+
+    padding: 1.5% 0.8%;
+     /* Margen inferior ajustado */
+    margin-bottom: 1.2rem;
+}

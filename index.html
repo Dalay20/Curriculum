@@ -42,14 +42,16 @@
       border: 2px solid #ccc;
       border-radius: 8px;
     }    
-
+   <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Tangerine">
   </style>
+  <link rel="stylesheet" href="./stylesheets/style.css">
 </head>
 <body>
   <header>
     <h1>Diego Alay</h1>
-    <h2>Estudiante de Ingeniería en Computación</h2>
-    <img src="./img/foto.jpg" alt="Foto de perfil">   
+    <h2 class="subtitle">Estudiante de Ingeniería en Computación</h2>
+    <img  id="photo" src="./img/foto.jpg" alt="Foto de perfil">   
 
        <!-- Menú de navegación actualizado -->
     <nav>
@@ -70,7 +72,7 @@
   </header>
 
   <section id="resumen">
-    <h2>Resumen Profesional</h2>
+    <h2 class="subtitle">Resumen Profesional</h2>
     <p>
       Estudiante de Ingeniería en Computación con sólida base en desarrollo de software, estructuras de datos y algoritmos. Busco oportunidades para crecer profesionalmente en empresas tecnológicas innovadoras.
     </p>
@@ -78,7 +80,7 @@
   </section>
 
   <section id="habilidades">
-    <h2>Habilidades Técnicas</h2>
+    <h2 class="subtitle">Habilidades Técnicas</h2>
     <div class="skills">
       <span>Python</span>
       <span>Java</span>
@@ -89,7 +91,7 @@
   </section>
 
   <section id="proyectos">
-    <h2>Proyectos Destacados</h2>
+    <h2 class="subtitle">Proyectos Destacados</h2>
     <ul>
       <li><strong>Sistema de Gestión de Tareas</strong> – Aplicación web full-stack usando React y Node.js para organizar tareas personales (2024).</li>
       <li><strong>Clasificador de Imágenes</strong> – Proyecto con Python y TensorFlow para identificar objetos en imágenes con red neuronal convolucional (2023).</li>
@@ -97,19 +99,19 @@
   </section>
 
   <section id="experiencia">
-    <h2>Experiencia</h2>
+    <h2 class="subtitle">Experiencia</h2>
     <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br>
     Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
   </section>
 
   <section id="educacion">
-    <h2>Educación</h2>
+    <h2 class="subtitle">Educación</h2>
     <p><strong>Escuela Superior Politécnica del Litoral</strong><br>
     Ingeniería en Computación (2022 – actual)</p>
   </section>
 
   <section id="cursos">
-    <h2>Cursos y Certificaciones</h2>
+    <h2 class="subtitle">Cursos y Certificaciones</h2>
     <ul>
       <li>Curso Profesional de Desarrollo Web – Platzi (2024)</li>
       <li>Python para Ciencia de Datos – Coursera (2023)</li>
@@ -117,7 +119,7 @@
   </section>
 
   <section id="idiomas">
-    <h2>Idiomas</h2>
+    <h2 class="subtitle">Idiomas</h2>
     <ul>
       <li>Español – Nativo</li>
       <li>Inglés – Intermedio alto (B2)</li>
@@ -125,7 +127,7 @@
   </section>
 
   <!---  <section>
-    <h2>📍 Ubicación</h2>
+    <h2 class="subtitle">📍 Ubicación</h2>
     <p>Puedes encontrarme en la Escuela Superior Politécnica del Litoral, Guayaquil - Ecuador.</p>
     <iframe 
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.023651929019!2d-79.97238991114499!3d-2.1446260000000037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e0!3m2!1ses!2sec!4v1747503626074!5m2!1ses!2sec" 
@@ -136,7 +138,7 @@
   </section>-->
 
   <section id="contacto">
-    <h2>Contacto</h2>
+    <h2 class="subtitle">Contacto</h2>
     <p>Email: dalay@espo.edu.ec<br>
     GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
     
@@ -169,7 +171,7 @@
   </section>
 
   <section id="formulario">
-    <h2>Formulario de Contacto</h2>
+    <h2 class="subtitle">Formulario de Contacto</h2>
     <form action="#" method="POST">
 
       <!-- Campo de texto en una sola línea -->
@@ -219,7 +221,7 @@
   </section>
 
 <section id="seccion">
-  <h2>Sección Extra</h2>
+  <h2 class="subtitle">Sección Extra</h2>
 
   <!-- Párrafo con enlace -->
   <p>
@@ -269,7 +271,7 @@
 
 <!-- Agregar anclas a las secciones principales si lo deseas, por ejemplo: -->
 <section id="referencias">
-  <h2>Referencias</h2>
+  <h2 class="subtitle">Referencias</h2>
 
   <blockquote>
     "Diego demostró gran responsabilidad y compromiso en cada proyecto que lideró."
@@ -292,6 +294,10 @@
     Diego apoyó en la automatización de procesos, logrando excelentes resultados.</p>
   </blockquote>
 </section>
+
+<footer>
+  <p>© 2025 Diego Alay. Todos los derechos reservados.</p>
+</footer>
 
 </body>
 </html>
