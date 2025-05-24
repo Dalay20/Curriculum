@@ -1,7 +1,28 @@
-/* Aplica la fuente a todos los elementos */
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800; /* Negrita */
+  font-size: 4rem;
+  letter-spacing: -2px;
 }
+#subtitle {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200; /* Normal */
+  font-size: 1rem;
+  letter-spacing: -1px; 
+  font-style: italic
+}
+footer p {
+    /* Alineación del texto a la derecha */
+    text-align: right;
+
+    /* Estilo de fuente itálica */
+    font-style: italic;
+}
+/* Aplica la fuente a todos los elementos */ 
+*{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+} 
 
 h1 {
 
@@ -23,15 +44,6 @@ h1 {
     height: auto;
 }
 
-.subtitle {
-
-    /* Color del texto en rgba */
-    color: rgb(151 156 165 / 0.89);
-
-    /* Transformación del texto a mayúsculas */
-    text-transform: uppercase;
-}
-
 h2 {
 
     /* Alineación del texto */
@@ -42,16 +54,6 @@ h2 {
 
     font-family: 'Tangerine', serif;
         font-size: 48px;
-
-}
-
-footer p {
-
-    /* Alineación del texto a la derecha */
-    text-align: right;
-
-    /* Estilo de fuente itálica */
-    font-style: italic;
 
 }
 
@@ -86,17 +88,10 @@ section {
 }
 
 /* Estilo para el mapa */
- #map {
+    #map {
       width: 100%;
       height: 400px;
       box-shadow: 5px 5px 5px #888;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      background-color: #f7f7f7;
-      color: #333;
     }
     header, section {
       margin-bottom: 2rem;
@@ -117,3 +112,52 @@ section {
       border: 2px solid #ccc;
       border-radius: 8px;
     } 
+
+/* Fondo base */
+body {
+  background-color: #ffffff;
+  transition: background-color 1s ease;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Fondo de superficie (tarjetas, bloques destacados) */
+.card {
+  background-color: #f8f3fc;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Fondo tipo modal o testimonio */
+.modal {
+  background-color: #f8f3fc;
+  padding: 1.5rem;
+  border-left: 5px solid #9966ff;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+/* Sección secundaria */
+.section-secondary {
+  background-color: #e6e6e6;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Botones y llamadas a la acción */
+button, a.cta {
+  background-color: #9966ff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+button:hover, a.cta:hover {
+  background-color: #7a4fd6;
+}

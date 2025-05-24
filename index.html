@@ -11,17 +11,17 @@
         crossorigin=""/>
       
       <!-- Fuentes de Google --> 
-      <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Tangerine">
+      <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" 
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" 
 
       <!--- Estilos CSS -->         
-      <link rel="stylesheet" href="./stylesheets/style.css">
-       
+      <link rel="stylesheet" href="./stylesheets/style.css"> 
     </head>
     <body>
+      <div class="background"></div>
       <header>
-        <h1>Diego Alay</h1>
-        <h2 class="subtitle">Estudiante de Ingeniería en Computación</h2>
+        <h1 class="logo">Diego Alay</h1>
+        <h2 id="subtitle">Estudiante de Ingeniería en Computación</h2>
         <img  id="photo" src="./img/foto.jpg" alt="Foto de perfil">   
 
           <!-- Menú de navegación actualizado -->
@@ -42,7 +42,7 @@
 
       </header>
 
-      <section id="resumen">
+      <section id="resumen" class="section-secondary">
         <h2 class="subtitle">Resumen Profesional</h2>
         <p>
           Estudiante de Ingeniería en Computación con sólida base en desarrollo de software, estructuras de datos y algoritmos. Busco oportunidades para crecer profesionalmente en empresas tecnológicas innovadoras.
@@ -50,7 +50,7 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/7RWbq-lbBlk?si=B8Z5t_ypuMawJlj6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </section>
 
-      <section id="habilidades">
+      <section id="habilidades" class="card">
         <h2 class="subtitle">Habilidades Técnicas</h2>
         <div class="skills">
           <span>Python</span>
@@ -61,7 +61,7 @@
         </div>
       </section>
 
-      <section id="proyectos">
+      <section id="proyectos" class="card">
         <h2 class="subtitle">Proyectos Destacados</h2>
         <ul>
           <li><strong>Sistema de Gestión de Tareas</strong> – Aplicación web full-stack usando React y Node.js para organizar tareas personales (2024).</li>
@@ -69,19 +69,19 @@
         </ul>
       </section>
 
-      <section id="experiencia">
+      <section id="experiencia"  class="card">
         <h2 class="subtitle">Experiencia</h2>
         <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br>
         Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
       </section>
 
-      <section id="educacion">
+      <section id="educacion" class="section-secondary">
         <h2 class="subtitle">Educación</h2>
         <p><strong>Escuela Superior Politécnica del Litoral</strong><br>
         Ingeniería en Computación (2022 – actual)</p>
       </section>
 
-      <section id="cursos">
+      <section id="cursos"  class="card">
         <h2 class="subtitle">Cursos y Certificaciones</h2>
         <ul>
           <li>Curso Profesional de Desarrollo Web – Platzi (2024)</li>
@@ -89,7 +89,7 @@
         </ul>
       </section>
 
-      <section id="idiomas">
+      <section id="idiomas" class="card">
         <h2 class="subtitle">Idiomas</h2>
         <ul>
           <li>Español – Nativo</li>
@@ -97,7 +97,7 @@
         </ul>
       </section>
 
-      <section id="contacto">
+      <section id="contacto" class="card">
         <h2 class="subtitle">Contacto</h2>
         <p>Email: dalay@espo.edu.ec<br>
         GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
@@ -130,7 +130,7 @@
       </script>
       </section>
 
-      <section id="formulario">
+      <section id="formulario" class="card">
         <h2 class="subtitle">Formulario de Contacto</h2>
         <form action="#" method="POST">
 
@@ -180,7 +180,7 @@
         </form>
       </section>
 
-      <section id="seccion">
+      <section id="seccion" class="section-secondary">
         <h2 class="subtitle">Sección Extra</h2>
 
         <!-- Párrafo con enlace -->
@@ -229,7 +229,7 @@
         </table>
       </section>
   
-      <section id="referencias">
+      <section id="referencias"  class="modal">
         <h2 class="subtitle">Referencias</h2>
 
         <blockquote>
@@ -258,5 +258,6 @@
         <p>© 2025 Diego Alay. Todos los derechos reservados.</p>
       </footer>
 
+      
     </body>
   </html>
