@@ -161,3 +161,48 @@ button, a.cta {
 button:hover, a.cta:hover {
   background-color: #7a4fd6;
 }
+
+#video-wrapper {
+  width: 560px;
+  height: 315px;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  /* Opcional: agrega sombra para el modo normal */
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+#video-wrapper.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  height: 170px;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.responsive-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block; /* para evitar espacio abajo en iframe */
+}
+
+#close-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  background: rgba(138, 119, 119, 0.8);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 1100;
+  display: none; /* Oculto por defecto */
+}
+
+#video-wrapper.fixed #close-button {
+  display: block; /* Mostrar solo cuando está fijo */
+}
