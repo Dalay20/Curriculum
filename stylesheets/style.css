@@ -35,14 +35,7 @@ h1 {
         font-size: 48px;
 
 }
-#photo {
 
-    /* Ancho del elemento */
-    width: 8vw;
-
-    /* Alto del elemento */
-    height: auto;
-}
 
 h2 {
 
@@ -163,22 +156,41 @@ button:hover, a.cta:hover {
 }
 
 #video-wrapper {
-  width: 560px;
-  height: 315px;
-  transition: all 0.3s ease-in-out;
   position: relative;
-  /* Opcional: agrega sombra para el modo normal */
+  width: 100%;           /* Ocupa todo el ancho disponible */
+  max-width: 560px;      /* Máximo ancho normal */
+  padding-bottom: 56.25%; /* Mantiene relación 16:9 */
+  height: 0;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  overflow: hidden;
 }
 
+#video-wrapper iframe.responsive-iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Estado fijo al hacer scroll */
 #video-wrapper.fixed {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 300px;
-  height: 170px;
+  width: 300px;   /* Puedes ajustar según preferencia */
+  height: 170px;  /* Mantener proporción */
+  padding-bottom: 0; /* Quitar padding para estado fijo */
   z-index: 1000;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  overflow: visible;
+}
+
+#video-wrapper.fixed iframe.responsive-iframe {
+  position: static;
+  width: 100%;
+  height: 100%;
 }
 
 .responsive-iframe {
@@ -205,4 +217,118 @@ button:hover, a.cta:hover {
 
 #video-wrapper.fixed #close-button {
   display: block; /* Mostrar solo cuando está fijo */
+}
+
+/* Estilos aplicados para mejorar el imdice y la imagen de usuario - 26/5/25 - 10:07 */
+/* Contenedor del header en fila */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* centrado vertical */
+  padding: 20px;
+  gap: 40px;
+  background-color: #f5f7fa;
+}
+
+/* Menú vertical (índice) */
+.nav-menu {
+  flex: 1;
+  max-width: 250px;
+  background: #2c3e50;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu ul li {
+  margin-bottom: 15px;
+}
+
+.nav-menu ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.1em;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: block;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-menu ul li a:hover,
+.nav-menu ul li a:focus {
+  background-color: #34495e;
+  color: #1abc9c;
+  transform: translateX(5px);
+  outline: none;
+}
+
+/* Contenedor de info y foto alineado a la derecha */
+/* Profile info a la izquierda y centrado vertical */
+.profile-info {
+  flex: 1;
+  text-align: left;
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* alineado a la izquierda */
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo {
+  margin: 0;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #34495e;
+}
+
+#subtitle {
+  margin-top: 0;
+  font-weight: 400;
+  font-size: 1.3rem;
+  color: #7f8c8d;
+}
+
+#photo {
+  margin-top: 15px;
+  max-width: 180px;
+  border-radius: 0; /* sin borde redondeado */
+  border: 0;
+  box-shadow: 0;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .profile-info {
+    align-items: center;
+    text-align: center;
+  }
+
+  .nav-menu {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  #photo {
+    max-width: 140px;
+  }
+}
+
+section {
+  scroll-margin-top: 10px; /* ajusta el valor según la altura de tu header */
 }
