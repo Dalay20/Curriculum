@@ -1,0 +1,14 @@
+.hero {
+  height: 100vh; /* 100% de la altura del viewport */
+  width: 100%; /* ancho completo */
+  display: flex; /* para centrar contenido */
+  flex-direction: column;
+  justify-content: center; /* verticalmente centrado */
+  align-items: center; /* horizontalmente centrado */
+  background-image: url('tu-imagen.jpg'); /* imagen de fondo */
+  background-size: cover; /* cubrir todo el contenedor */
+  background-position: center; /* centrar la imagen */
+  color: white; /* texto claro */
+  text-align: center;
+  padding: 0 2rem; /* algo de padding horizontal */
+}

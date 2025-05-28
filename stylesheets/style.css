@@ -1,69 +1,4 @@
 
-.logo {
-  font-family: 'Inter', sans-serif;
-  font-weight: 800; /* Negrita */
-  font-size: 4rem;
-  letter-spacing: -2px;
-}
-#subtitle {
-  font-family: 'Nunito', sans-serif;
-  font-weight: 200; /* Normal */
-  font-size: 1rem;
-  letter-spacing: -1px; 
-  font-style: italic
-}
-footer p {
-    /* Alineación del texto a la derecha */
-    text-align: right;
-
-    /* Estilo de fuente itálica */
-    font-style: italic;
-}
-/* Aplica la fuente a todos los elementos */ 
-*{
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-} 
-
-h1 {
-
-    /* Alineación del texto */
-    text-align: center;
-
-    /* Grosor de la fuente negrita */
-    font-weight: bold;
-    font-family: 'Tangerine', serif;
-        font-size: 48px;
-
-}
-
-
-h2 {
-
-    /* Alineación del texto */
-    text-align: center;
-
-    /* Grosor de la fuente negrita */
-    font-weight: bold;
-
-    font-family: 'Tangerine', serif;
-        font-size: 48px;
-
-}
-nav {
-  background-color: black;
-  border-radius: 30px;
-  position:fixed;
-  z-index: 1000;
-}
-nav > ul {
-
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    
-}
 section {
     /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
     border: 0.2pt solid #cedddd;
@@ -74,45 +9,76 @@ section {
     0.8% a los lados derecho e izquierdo. */
 
     padding: 1.5% 0.8%;
-     /* Margen inferior ajustado */
+    /* Margen inferior ajustado */
     margin-bottom: 1.2rem;
 
-     /* borde redondeado con un radio de 5 píxeles */
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
+    /* borde redondeado con un radio de 5 píxeles */
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
    
-   /*sombra a un elemento */
-   -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-   -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-   box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    /*sombra a un elemento */
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
 }
 
 /* Estilo para el mapa */
-    #map {
+#map {
       width: 100%;
       height: 400px;
       box-shadow: 5px 5px 5px #888;
-    }
-    header, section {
+}
+
+header, section {
       margin-bottom: 2rem;
     }
-    h1, h2 {
+
+h1, h2 {
       color: #2c3e50;
     }
-    .skills span {
+
+.skills span {
       display: inline-block;
       background-color: #e0e0e0;
       padding: 0.3em 0.6em;
       margin: 0.2em;
       border-radius: 4px;
     }
-    frame {
+
+frame {
       width: 100%;
       height: 400px;
       border: 2px solid #ccc;
       border-radius: 8px;
     } 
+
+/* Estilos para el formulario */
+section {
+  scroll-margin-top: 10px; /* ajusta el valor según la altura de tu header */
+}
+
+/* Estilo del formulario */
+section >  form {
+  display: grid;
+  flex-direction: row;
+  row-gap: 1rem;
+  column-gap: 1rem;
+} 
+
+/* Aplica la fuente a todos los elementos */ 
+*{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+} 
+
+
+footer p {
+    /* Alineación del texto a la derecha */
+    text-align: right;
+
+    /* Estilo de fuente itálica */
+    font-style: italic;
+}
 
 /* Fondo base */
 body {
@@ -122,244 +88,12 @@ body {
   color: #333;
 }
 
-/* Fondo de superficie (tarjetas, bloques destacados) */
-.card {
-  background-color: #f8f3fc;
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-/* Fondo tipo modal o testimonio */
-.modal {
-  background-color: #f8f3fc;
-  padding: 1.5rem;
-  border-left: 5px solid #9966ff;
-  margin-bottom: 2rem;
-  border-radius: 8px;
-}
-
-/* Sección secundaria */
-.section-secondary {
-  background-color: #e6e6e6;
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-/* Botones y llamadas a la acción */
-button, a.cta {
-  background-color: #9966ff;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-button:hover, a.cta:hover {
-  background-color: #7a4fd6;
-}
-
-
-  #video-wrapper {
-  position: relative;
-  width: 500px;      /* Ajusta el ancho a tu gusto */
-  height: 300px;     /* 16:9 para 220px de ancho */
-  max-width: 100%;
-  margin: 0 auto;
-  padding-bottom: 0; /* Elimina el truco de altura */
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 5px rgba(0,0,0,0.2);
-  overflow: hidden;
-}
-
-
-#video-wrapper iframe.responsive-iframe {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-/* Estado fijo al hacer scroll */
-#video-wrapper.fixed {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;   /* Puedes ajustar según preferencia */
-  height: 170px;  /* Mantener proporción */
-  padding-bottom: 0; /* Quitar padding para estado fijo */
-  z-index: 1000;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  overflow: visible;
-}
-
-#video-wrapper.fixed iframe.responsive-iframe {
-  position: static;
-  width: 100%;
-  height: 100%;
-}
-
-.responsive-iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  display: block; /* para evitar espacio abajo en iframe */
-}
-
-#close-button {
-  position: absolute;
-  top: 4px;
-  right: 4px;
-  background: rgba(138, 119, 119, 0.8);
-  color: white;
-  border: none;
-  border-radius: 3px;
-  padding: 2px 6px;
-  font-size: 14px;
-  cursor: pointer;
-  z-index: 1100;
-  display: none; /* Oculto por defecto */
-}
-
-#video-wrapper.fixed #close-button {
-  display: block; /* Mostrar solo cuando está fijo */
-}
-
-/* Estilos aplicados para mejorar el imdice y la imagen de usuario - 26/5/25 - 10:07 */
-/* Contenedor del header en fila */
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; /* centrado vertical */
-  padding: 20px;
-  gap: 40px;
-  background-color: #f5f7fa;
-}
-
-
-.nav-menu ul li {
-  margin-bottom: 15px;
-}
-
-.nav-menu ul li a {
-  color: #ecf0f1;
-  text-decoration: none;
-  font-weight: 600;
-  font-family: 'Nunito', sans-serif;
-  font-size: 1.1em;
-  transition: color 0.3s ease, transform 0.3s ease;
-  display: block;
-  padding: 8px 12px;
-  border-radius: 4px;
-}
-
-.nav-menu ul li a:hover,
-.nav-menu ul li a:focus {
-  background-color: #34495e;
-  color: #1abc9c;
-  transform: translateX(5px);
-  outline: none;
-}
-
-/* Contenedor de info y foto alineado a la derecha */
-/* Profile info a la izquierda y centrado vertical */
-.profile-info {
-  flex: 1;
-  text-align: left;
-  font-family: 'Nunito', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* alineado a la izquierda */
-  justify-content: center;
-  gap: 10px;
-}
-
-.logo {
-  margin: 0;
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #34495e;
-}
-
-#subtitle {
-  margin-top: 0;
-  font-weight: 400;
-  font-size: 1.3rem;
-  color: #7f8c8d;
-}
-
-#photo {
-  margin-top: 15px;
-  max-width: 180px;
-  border-radius: 0; /* sin borde redondeado */
-  border: 0;
-  box-shadow: 0;
-  object-fit: cover;
-}
-
-@media (max-width: 768px) {
-  .header-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .profile-info {
-    align-items: center;
+h1 {
+    /* Alineación del texto */
     text-align: center;
-  }
 
-  .nav-menu {
-    max-width: 100%;
-    width: 100%;
-    text-align: center;
-  }
-
-  #photo {
-    max-width: 140px;
-  }
-}
-
-section {
-  scroll-margin-top: 10px; /* ajusta el valor según la altura de tu header */
-}
-
-section >  form {
-  display: grid;
-  flex-direction: row;
-  row-gap: 1rem;
-  column-gap: 1rem;
-  
-} 
-
-#referencias {
-
-     /* Activa el modelo Flexbox */
-     display: flex;
-
-     /* Permite que los hijos pasen a la siguiente línea si no caben */
-     flex-wrap: wrap;
-
-     /* Espaciado uniforme entre filas y columnas */
-     gap: 1rem;
-
-}
-
-#referencias > h2 {
-
-     /* Hace que el subtítulo ocupe el 100% del ancho del contenedor */
-     flex: 0 0 100%;
-
-}
-
-#referencias > article {
-
-     /* Distribuye equitativamente los artículos en tres columnas */
-     flex: 1 1 calc(33.333% - 1rem);
-
+    /* Grosor de la fuente negrita */
+    font-weight: bold;
+    font-family: 'Tangerine', serif;
+        font-size: 48px;
 }

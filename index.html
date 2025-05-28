@@ -3,7 +3,7 @@
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title> Currículum de Diego Alay </title>
+      <title> CV_Diego_Alay </title>
 
       <!--- Estilos de Leaftlet-->
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -16,18 +16,22 @@
 
       <!--- Estilos CSS -->         
       <link rel="stylesheet" href="./stylesheets/style.css"> 
+      <link rel="stylesheet" href="./stylesheets/menu-hamburguesa.css">
+      <link rel="stylesheet" href="./stylesheets/hero.css">
+      <link rel="stylesheet" href="./stylesheets/referencias.css">
+      <link rel="stylesheet" href="./stylesheets/video.css">
     </head>
     <body>
-     <!-- <div class="background"></div> -->
-
-      <header class="header-container">
-        <div class="profile-info">
-          <h1 class="logo">Diego Alay</h1>
-          <h2 id="subtitle">Estudiante de Ingeniería en Computación</h2>
-          <img  id="photo" src="./img/foto.jpg" alt="Foto de perfil">   
-        </div>
+      
+      <header>
+        <div id="menu-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> 
+        
           <!-- Menú de navegación actualizado -->
-        <nav class="nav-menu">
+        <nav id="floating-menu" class="hidden">
           <ul>
             <li><a href="#resumen">Resumen</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
@@ -41,10 +45,15 @@
             <li><a href="#referencias">Referencias</a></li>
           </ul>
         </nav>
-
       </header>
 
-      <section id="resumen" class="section-secondary">
+      <section class="hero">
+        <h1 class="logo">Diego Alay</h1>
+        <h2 id="subtitle">Estudiante de Ingeniería en Computación</h2>
+        <img id="photo" src="./img/foto.jpg" alt="Foto de perfil">
+      </section>
+
+      <section id="resumen" >
         <h2 class="subtitle">Resumen Profesional</h2>
         <p>
           Estudiante de Ingeniería en Computación con sólida base en desarrollo de software, estructuras de datos y algoritmos. Busco oportunidades para crecer profesionalmente en empresas tecnológicas innovadoras.
@@ -62,7 +71,7 @@
         </div>
       </section>
 
-      <section id="habilidades" class="card">
+      <section id="habilidades">
         <h2 class="subtitle">Habilidades Técnicas</h2>
         <div class="skills">
           <span>Python</span>
@@ -73,7 +82,7 @@
         </div>
       </section>
 
-      <section id="proyectos" class="card">
+      <section id="proyectos">
         <h2 class="subtitle">Proyectos Destacados</h2>
         <ul>
           <li><strong>Sistema de Gestión de Tareas</strong> – Aplicación web full-stack usando React y Node.js para organizar tareas personales (2024).</li>
@@ -81,19 +90,19 @@
         </ul>
       </section>
 
-      <section id="experiencia"  class="card">
+      <section id="experiencia">
         <h2 class="subtitle">Experiencia</h2>
         <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br>
         Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
       </section>
 
-      <section id="educacion" class="section-secondary">
+      <section id="educacion">
         <h2 class="subtitle">Educación</h2>
         <p><strong>Escuela Superior Politécnica del Litoral</strong><br>
         Ingeniería en Computación (2022 – actual)</p>
       </section>
 
-      <section id="cursos"  class="card">
+      <section id="cursos">
         <h2 class="subtitle">Cursos y Certificaciones</h2>
         <ul>
           <li>Curso Profesional de Desarrollo Web – Platzi (2024)</li>
@@ -101,7 +110,7 @@
         </ul>
       </section>
 
-      <section id="idiomas" class="card">
+      <section id="idiomas">
         <h2 class="subtitle">Idiomas</h2>
         <ul>
           <li>Español – Nativo</li>
@@ -109,7 +118,7 @@
         </ul>
       </section>
 
-      <section id="contacto" class="card">
+      <section id="contacto">
         <h2 class="subtitle">Contacto</h2>
         <p>Email: dalay@espo.edu.ec<br>
         GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
@@ -142,7 +151,7 @@
       </script>
       </section>
 
-      <section id="formulario" class="card">
+      <section id="formulario">
         <h2 class="subtitle">Formulario de Contacto</h2>
         <form action="#" method="POST">
 
@@ -192,7 +201,7 @@
         </form>
       </section>
 
-      <section id="seccion" class="section-secondary">
+      <section id="seccion">
         <h2 class="subtitle">Sección Extra</h2>
 
         <!-- Párrafo con enlace -->
@@ -241,7 +250,7 @@
         </table>
       </section>
   
-      <section id="referencias"  class="modal">
+      <section id="referencias">
         <h2 class="subtitle">Referencias</h2>
 
         <article>
@@ -276,5 +285,7 @@
       </footer>
 
     <script src="scripts/video.js"></script>
+    <script src="scripts/menu-hamburguesa.js"></script>
+
     </body>
   </html>
