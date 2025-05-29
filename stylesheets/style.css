@@ -1,5 +1,32 @@
 
+:root {
+  --bg-color: #f9f9f9;
+  --primary: #2c3e50;
+  --accent: #3498db;
+  --text: #333;
+  --card-bg: #ffffff;
+  --border: #e0e0e0;
+}
+body {
+  /*background-color: #ffffff;
+  transition: background-color 1s ease;
+  font-family: Arial, sans-serif;
+  color: #333; */
+  background-color: var(--bg-color);
+  color: var(--text);
+}
+
+
+h1, h2 {
+  color: var(--primary);
+}
 section {
+    background-color: var(--card-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    
     /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
     border: 0.2pt solid #cedddd;
     /* margen (espacio externo) superior, derecho, abajo e izquierda */
@@ -81,19 +108,3 @@ footer p {
 }
 
 /* Fondo base */
-body {
-  background-color: #ffffff;
-  transition: background-color 1s ease;
-  font-family: Arial, sans-serif;
-  color: #333;
-}
-
-h1 {
-    /* Alineación del texto */
-    text-align: center;
-
-    /* Grosor de la fuente negrita */
-    font-weight: bold;
-    font-family: 'Tangerine', serif;
-        font-size: 48px;
-}
