@@ -7,30 +7,25 @@
 
       <!--- Estilos de Leaftlet-->
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-        crossorigin=""/>
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
       
       <!-- Fuentes de Google --> 
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-
       <!--- Estilos CSS -->         
       <link rel="stylesheet" href="./stylesheets/style.css"> 
       <link rel="stylesheet" href="./stylesheets/menu-hamburguesa.css">
-      <link rel="stylesheet" href="./stylesheets/hero.css">
       <link rel="stylesheet" href="./stylesheets/referencias.css">
       <link rel="stylesheet" href="./stylesheets/video.css">
+      <link rel="stylesheet" href="stylesheets/grid-layout.css">
     </head>
+
     <body>
       
       <header>
-        <div id="menu-toggle" aria-label="Abrir menú">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div> 
+        <div id="menu-toggle" aria-label="Abrir menú"> <span></span> <span></span> <span></span> </div> 
         
-          <!-- Menú de navegación actualizado -->
+        <!-- Menú de navegación actualizado -->
         <nav id="floating-menu" class="hidden">
           <ul>
             <li><a href="#resumen">Resumen</a></li>
@@ -45,247 +40,252 @@
             <li><a href="#referencias">Referencias</a></li>
           </ul>
         </nav>
+
       </header>
 
-      <section class="hero">
-        <h1 class="logo">Diego Alay</h1>
-        <h2 id="subtitle">Estudiante de Ingeniería en Computación</h2>
-        <img id="photo" src="./img/foto.jpg" alt="Foto de perfil">
-      </section>
-
-      <section id="resumen" >
-        <h2 class="subtitle">Resumen Profesional</h2>
-        <p>
-          Estudiante de Ingeniería en Computación con sólida base en desarrollo de software, estructuras de datos y algoritmos. Busco oportunidades para crecer profesionalmente en empresas tecnológicas innovadoras.
-        </p>
+      <main class="grid-layout">
+      
+        <section class="hero">
+          <h1 class="logo">Diego Alay</h1>
+          <h2 id="subtitle">Estudiante de Ingeniería en Computación</h2>
+          <img id="photo" src="./img/foto.jpg" alt="Foto de perfil">
         </section>
 
-      <section id="video-section">
-        <div id="video-wrapper">
-          <button id="close-button" title="Cerrar video">X</button>
-          <iframe
-            src="https://www.youtube.com/embed/7RWbq-lbBlk?si=B8Z5t_ypuMawJlj6"           
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="responsive-iframe">
-          </iframe>
-        </div>
-      </section>
+        <section id="resumen">
+          <h2>Resumen Profesional</h2>
+          <p>
+            Estudiante de Ingeniería en Computación con conocimientos base en desarrollo de software, estructuras de datos y algoritmos.
+            Busco oportunidades para crecer profesionalmente en empresas tecnológicas innovadoras.
+          </p>
+        </section>
 
-      <section id="habilidades">
-        <h2 class="subtitle">Habilidades Técnicas</h2>
-        <div class="skills">
-          <span>Python</span>
-          <span>Java</span>
-          <span>HTML/CSS</span>
-          <span>SQL</span>
-          <span>Git/GitHub</span>
-        </div>
-      </section>
+        <section id="video-section">
+          <div id="video-wrapper">
+            <button id="close-button" title="Cerrar video">X</button>
+            <iframe
+              src="https://www.youtube.com/embed/7RWbq-lbBlk?si=B8Z5t_ypuMawJlj6"           
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="responsive-iframe">
+            </iframe>
+          </div>
+        </section>
 
-      <section id="proyectos">
-        <h2 class="subtitle">Proyectos Destacados</h2>
-        <ul>
-          <li><strong>Sistema de Gestión de Tareas</strong> – Aplicación web full-stack usando React y Node.js para organizar tareas personales (2024).</li>
-          <li><strong>Clasificador de Imágenes</strong> – Proyecto con Python y TensorFlow para identificar objetos en imágenes con red neuronal convolucional (2023).</li>
-        </ul>
-      </section>
+        <section id="habilidades">
+          <h2>Habilidades Técnicas</h2>
+          <div class="skills">
+            <span>Python</span>
+            <span>Java</span>
+            <span>HTML/CSS</span>
+            <span>SQL</span>
+            <span>Git/GitHub</span>
+          </div>
+        </section>
 
-      <section id="experiencia">
-        <h2 class="subtitle">Experiencia</h2>
-        <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br>
-        Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
-      </section>
+        <section id="proyectos">
+          <h2>Proyectos Destacados</h2>
+          <ul>
+            <li><strong>Sistema de Gestión de Tareas</strong> – Aplicación web full-stack usando React y Node.js para organizar tareas personales (2024).</li>
+            <li><strong>Clasificador de Imágenes</strong> – Proyecto con Python y TensorFlow para identificar objetos en imágenes con red neuronal convolucional (2023).</li>
+          </ul>
+        </section>
 
-      <section id="educacion">
-        <h2 class="subtitle">Educación</h2>
-        <p><strong>Escuela Superior Politécnica del Litoral</strong><br>
-        Ingeniería en Computación (2022 – actual)</p>
-      </section>
+        <section id="experiencia">
+          <h2>Experiencia</h2>
+          <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br>
+          Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
+        </section>
 
-      <section id="cursos">
-        <h2 class="subtitle">Cursos y Certificaciones</h2>
-        <ul>
-          <li>Curso Profesional de Desarrollo Web – Platzi (2024)</li>
-          <li>Python para Ciencia de Datos – Coursera (2023)</li>
-        </ul>
-      </section>
+        <section id="educacion">
+          <h2>Educación</h2>
+          <p><strong>Escuela Superior Politécnica del Litoral</strong><br>
+          Ingeniería en Computación (2022 – actual)</p>
+        </section>
 
-      <section id="idiomas">
-        <h2 class="subtitle">Idiomas</h2>
-        <ul>
-          <li>Español – Nativo</li>
-          <li>Inglés – Intermedio alto (B2)</li>
-        </ul>
-      </section>
+        <section id="cursos">
+          <h2>Cursos y Certificaciones</h2>
+          <ul>
+            <li>Curso Profesional de Desarrollo Web – Platzi (2024)</li>
+            <li>Python para Ciencia de Datos – Coursera (2023)</li>
+          </ul>
+        </section>
 
-      <section id="contacto">
-        <h2 class="subtitle">Contacto</h2>
-        <p>Email: dalay@espo.edu.ec<br>
-        GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
-        
-        <p>Puedes encontrarme en la Escuela Superior Politécnica del Litoral, Guayaquil - Ecuador.</p>
+        <section id="idiomas">
+          <h2>Idiomas</h2>
+          <ul>
+            <li>Español – Nativo</li>
+            <li>Inglés – Intermedio alto (B2)</li>
+          </ul>
+        </section>
 
-      <!-- Contenedor del mapa -->
-      <div id="map"></div>
+        <section id="contacto">
+          <h2>Contacto</h2>
+          <p>Email: dalay@espo.edu.ec<br>
+          GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
+          
+          <p>Puedes encontrarme en la Escuela Superior Politécnica del Litoral, Guayaquil - Ecuador.</p>
 
-      <!-- Scripts de Leaflet -->
-      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+        <!-- Contenedor del mapa -->
+        <div id="map"></div>
 
-      <!-- Inicialización del mapa -->
-      <script>
-        // Coordenadas de ESPOL (Campus Gustavo Galindo)
-        var map = L.map('map').setView([-2.1477566203612755, -79.96455786641206], 16);
+        <!-- Scripts de Leaflet -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 
-        // Cargar tiles desde OpenStreetMap
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          maxZoom: 19,
-            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          }).addTo(map);
+        <!-- Inicialización del mapa -->
+        <script>
+          // Coordenadas de ESPOL (Campus Gustavo Galindo)
+          var map = L.map('map').setView([-2.1477566203612755, -79.96455786641206], 16);
 
-        // Agregar escala y marcador draggable
-        L.control.scale().addTo(map);
-        L.marker([-2.1444651780152544, -79.9678087037997], { draggable: false }).addTo(map)
-          .bindPopup('FIEC - ESPOL')
-          .openPopup();
-      </script>
-      </section>
+          // Cargar tiles desde OpenStreetMap
+          L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+              attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
 
-      <section id="formulario">
-        <h2 class="subtitle">Formulario de Contacto</h2>
-        <form action="#" method="POST">
+          // Agregar escala y marcador draggable
+          L.control.scale().addTo(map);
+          L.marker([-2.1444651780152544, -79.9678087037997], { draggable: false }).addTo(map)
+            .bindPopup('FIEC - ESPOL')
+            .openPopup();
+        </script>
+        </section>
 
-          <!-- Campo de texto en una sola línea -->
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
+        <section id="formulario">
+          <h2>Formulario de Contacto</h2>
+          <form action="#" method="POST">
 
-          <!-- Lista desplegable -->
-          <label for="motivo">Motivo de Contacto:</label>
-          <select id="motivo" name="motivo" required>
-            <option value="consulta">Consulta</option>
-            <option value="trabajo">Oportunidad laboral</option>
-            <option value="otro">Otro</option>
-          </select>
+            <!-- Campo de texto en una sola línea -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-          <!-- Opciones relacionadas (radio buttons) -->
-          <fieldset>
-            <legend>Intereses:</legend>
-            <label>
-              <input type="radio" name="interes" value="desarrollo" required> Desarrollo de Software
-            </label>
-            <label>
-              <input type="radio" name="interes" value="inteligencia-artificial" required> Inteligencia Artificial
-            </label>
-            <label>
-              <input type="radio" name="interes" value="bases-datos" required> Bases de Datos
-            </label>
-          </fieldset>
+            <!-- Lista desplegable -->
+            <label for="motivo">Motivo de Contacto:</label>
+            <select id="motivo" name="motivo" required>
+              <option value="consulta">Consulta</option>
+              <option value="trabajo">Oportunidad laboral</option>
+              <option value="otro">Otro</option>
+            </select>
 
-          <!-- Forma de contacto -->
-          <fieldset>
-            <legend>¿Cómo desea ser contactado?</legend>
-            <label>
-              <input type="radio" name="contacto" value="email" required> Email
-            </label>
-            <label>
-              <input type="radio" name="contacto" value="telefono" required> Teléfono
-            </label>
-          </fieldset>
+            <!-- Opciones relacionadas (radio buttons) -->
+            <fieldset>
+              <legend>Intereses:</legend>
+              <label>
+                <input type="radio" name="interes" value="desarrollo" required> Desarrollo de Software
+              </label>
+              <label>
+                <input type="radio" name="interes" value="inteligencia-artificial" required> Inteligencia Artificial
+              </label>
+              <label>
+                <input type="radio" name="interes" value="bases-datos" required> Bases de Datos
+              </label>
+            </fieldset>
 
-          <!-- Campo de área de texto -->
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea>
+            <!-- Forma de contacto -->
+            <fieldset>
+              <legend>¿Cómo desea ser contactado?</legend>
+              <label>
+                <input type="radio" name="contacto" value="email" required> Email
+              </label>
+              <label>
+                <input type="radio" name="contacto" value="telefono" required> Teléfono
+              </label>
+            </fieldset>
 
-          <!-- Botón de envío -->
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
+            <!-- Campo de área de texto -->
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="30" required></textarea>
 
-      <section id="seccion">
-        <h2 class="subtitle">Sección Extra</h2>
+            <!-- Botón de envío -->
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
 
-        <!-- Párrafo con enlace -->
-        <p>
-          Visita mi sitio favorito para aprender programación: 
-          <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.
-        </p>
+        <section id="seccion">
+          <h2>Sección Extra</h2>
 
-        <!-- Lista ordenada -->
-        <h3>Pasos para iniciar un proyecto:</h3>
-        <ol>
-          <li>Define el objetivo del proyecto</li>
-          <li>Planifica las tareas principales</li>
-          <li>Comienza con la implementación</li>
-        </ol>
+          <!-- Párrafo con enlace -->
+          <p>
+            Visita mi sitio favorito para aprender programación: 
+            <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.
+          </p>
 
-        <!-- Lista no ordenada -->
-        <h3>Tecnologías recomendadas:</h3>
-        <ul>
-          <li>Python</li>
-          <li>JavaScript</li>
-          <li>SQL</li>
-        </ul>
+          <!-- Lista ordenada -->
+          <h3>Pasos para iniciar un proyecto:</h3>
+          <ol>
+            <li>Define el objetivo del proyecto</li>
+            <li>Planifica las tareas principales</li>
+            <li>Comienza con la implementación</li>
+          </ol>
 
-        <!-- Tabla sin bordes -->
-        <h3>Comparativa de Lenguajes</h3>
-        <table style="border-collapse: collapse;">
-          <tr>
-            <th></th>
-            <th>Python</th>
-            <th>JavaScript</th>
-            <th>Java</th>
-          </tr>
-          <tr>
-            <th>Paradigma</th>
-            <td>Multiparadigma</td>
-            <td>Multiparadigma</td>
-            <td>Orientado a objetos</td>
-          </tr>
-          <tr>
-            <th>Popularidad</th>
-            <td>Alta</td>
-            <td>Muy alta</td>
-            <td>Alta</td>
-          </tr>
-        </table>
-      </section>
-  
-      <section id="referencias">
-        <h2 class="subtitle">Referencias</h2>
+          <!-- Lista no ordenada -->
+          <h3>Tecnologías recomendadas:</h3>
+          <ul>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>SQL</li>
+          </ul>
 
-        <article>
-           <blockquote>
-           "Diego demostró gran responsabilidad y compromiso en cada proyecto que lideró."  </blockquote>
-          <p><span>María Torres</span><br>
-          Gerente de Proyectos en XYZ Tech<br>
-          Trabajé con Diego durante su pasantía, donde destacó por su iniciativa y habilidades técnicas.</p>
-        
-        </article>
+          <!-- Tabla sin bordes -->
+          <h3>Comparativa de Lenguajes</h3>
+          <table style="border-collapse: collapse;">
+            <tr>
+              <th></th>
+              <th>Python</th>
+              <th>JavaScript</th>
+              <th>Java</th>
+            </tr>
+            <tr>
+              <th>Paradigma</th>
+              <td>Multiparadigma</td>
+              <td>Multiparadigma</td>
+              <td>Orientado a objetos</td>
+            </tr>
+            <tr>
+              <th>Popularidad</th>
+              <td>Alta</td>
+              <td>Muy alta</td>
+              <td>Alta</td>
+            </tr>
+          </table>
+        </section>
+    
+        <section id="referencias">
+          <h2>Referencias</h2>
 
-        <article>
-          <blockquote>
-          "Siempre dispuesto a aprender y colaborar, Diego fue un valioso miembro del equipo." </blockquote>
-          <p><span>Carlos Pérez</span><br>
-          Líder de Desarrollo en Innovatech<br>
-          Diego participó en el desarrollo de una API, mostrando creatividad y eficiencia.</p>
-         
-        </article>
+          <article>
+            <blockquote>
+            "Diego demostró gran responsabilidad y compromiso en cada proyecto que lideró."  </blockquote>
+            <p><span>María Torres</span><br>
+            Gerente de Proyectos en XYZ Tech<br>
+            Trabajé con Diego durante su pasantía, donde destacó por su iniciativa y habilidades técnicas.</p>  
+          </article>
 
-        <article>
-          <blockquote>
-          "Su ética profesional y atención al detalle son ejemplares."</blockquote>
-          <p><span>Lucía Ramírez</span><br>
-          Coordinadora de TI en Soluciones Digitales<br>
-          Diego apoyó en la automatización de procesos, logrando excelentes resultados.</p>
-        </article>
-      </section>
+          <article>
+            <blockquote>
+            "Siempre dispuesto a aprender y colaborar, Diego fue un valioso miembro del equipo." </blockquote>
+            <p><span>Carlos Pérez</span><br>
+            Líder de Desarrollo en Innovatech<br>
+            Diego participó en el desarrollo de una API, mostrando creatividad y eficiencia.</p>         
+          </article>
+
+          <article>
+            <blockquote>
+            "Su ética profesional y atención al detalle son ejemplares."</blockquote>
+            <p><span>Lucía Ramírez</span><br>
+            Coordinadora de TI en Soluciones Digitales<br>
+            Diego apoyó en la automatización de procesos, logrando excelentes resultados.</p>
+          </article>
+        </section>
+
+      </main>
 
       <footer>
         <p>© 2025 Diego Alay. Todos los derechos reservados.</p>
       </footer>
-
-    <script src="scripts/video.js"></script>
-    <script src="scripts/menu-hamburguesa.js"></script>
+    
+      <!-- Scripts -->
+      <script src="scripts/video.js"></script>
+      <script src="scripts/menu-hamburguesa.js"></script>
 
     </body>
   </html>
