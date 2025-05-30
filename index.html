@@ -19,6 +19,10 @@
       <link rel="stylesheet" href="./stylesheets/video.css">
       <link rel="stylesheet" href="./stylesheets/grid-layout.css">
       <link rel="stylesheet" href="./stylesheets/theme.css"> 
+
+      <!--- Iconos de Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     </head>
 
     <body>
@@ -37,7 +41,7 @@
             <li><a href="#cursos">Cursos</a></li>
             <li><a href="#idiomas">Idiomas</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#seccion">Sección Extra</a></li>
+            <li><a href="#seccion-extra">Sección Extra</a></li>
             <li><a href="#referencias">Referencias</a></li>
           </ul>
         </nav>
@@ -59,7 +63,8 @@
             Busco oportunidades para crecer profesionalmente en empresas tecnológicas innovadoras.
           </p>
         </section>
-
+         
+        <div class="video-skills-container">
         <section id="video-section">
           <div id="video-wrapper">
             <button id="close-button" title="Cerrar video">X</button>
@@ -73,14 +78,17 @@
 
         <section id="habilidades">
           <h2 class="subtitle">Habilidades Técnicas</h2>
-          <div class="skills">
-            <span>Python</span>
-            <span>Java</span>
-            <span>HTML/CSS</span>
-            <span>SQL</span>
-            <span>Git/GitHub</span>
+          <div class="skills-icons">
+            <i class="fab fa-python skill-icon" title="Python"></i>
+            <i class="fab fa-java skill-icon" title="Java"></i>
+            <i class="fab fa-html5 skill-icon" title="HTML5"></i>
+            <i class="fab fa-css3-alt skill-icon" title="CSS3"></i>
+            <i class="fas fa-database skill-icon" title="SQL"></i>
+            <i class="fab fa-git-alt skill-icon" title="Git"></i>
+            <i class="fab fa-github skill-icon" title="GitHub"></i>
           </div>
         </section>
+        </div>
 
         <section id="proyectos">
           <h2 class="subtitle">Proyectos Destacados</h2>
@@ -92,7 +100,7 @@
 
         <section id="experiencia">
           <h2 class="subtitle">Experiencia</h2>
-          <p><strong>Prácticas en XYZ Tech</strong> (Enero 2025 – Marzo 2025)<br>
+          <p><strong>Prácticas en Tech</strong> (Enero 2025 – Marzo 2025)<br>
           Asistente de desarrollo en equipo de backend, apoyando en diseño de APIs y pruebas automatizadas.</p>
         </section>
 
@@ -120,8 +128,9 @@
 
         <section id="contacto">
           <h2 class="subtitle">Contacto</h2>
-          <p>Email: dalay@espo.edu.ec<br>
+          
           GitHub: <a href="https://github.com/Dalay20" target="_blank">github.com/Dalay20</a></p>
+          Correo: <a href="mailto:diegojam20@gmail.com">diegojam20@gmail.com</a>
           
           <p>Puedes encontrarme en la Escuela Superior Politécnica del Litoral, Guayaquil - Ecuador.</p>
 
@@ -201,54 +210,57 @@
           </form>
         </section>
 
-        <section id="seccion">
-          <h2 class="subtitle">Sección Extra</h2>
+        <section id="seccion-extra">
+          <h2 class="subtitle">
+            <i class="fas fa-lightbulb"></i> Sección Extra
+          </h2>
 
-          <!-- Párrafo con enlace -->
           <p>
-            Visita mi sitio favorito para aprender programación: 
+            Visita mi sitio favorito para aprender programación:
             <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>.
           </p>
 
-          <!-- Lista ordenada -->
           <h3>Pasos para iniciar un proyecto:</h3>
-          <ol>
+          <ol class="pasos">
             <li>Define el objetivo del proyecto</li>
             <li>Planifica las tareas principales</li>
             <li>Comienza con la implementación</li>
           </ol>
 
-          <!-- Lista no ordenada -->
           <h3>Tecnologías recomendadas:</h3>
-          <ul>
+          <ul class="recomendaciones">
             <li>Python</li>
             <li>JavaScript</li>
             <li>SQL</li>
           </ul>
 
-          <!-- Tabla sin bordes -->
           <h3>Comparativa de Lenguajes</h3>
-          <table style="border-collapse: collapse;">
-            <tr>
-              <th></th>
-              <th>Python</th>
-              <th>JavaScript</th>
-              <th>Java</th>
-            </tr>
-            <tr>
-              <th>Paradigma</th>
-              <td>Multiparadigma</td>
-              <td>Multiparadigma</td>
-              <td>Orientado a objetos</td>
-            </tr>
-            <tr>
-              <th>Popularidad</th>
-              <td>Alta</td>
-              <td>Muy alta</td>
-              <td>Alta</td>
-            </tr>
+          <table class="comparativa-lenguajes">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Python</th>
+                <th>JavaScript</th>
+                <th>Java</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Paradigma</th>
+                <td>Multiparadigma</td>
+                <td>Multiparadigma</td>
+                <td>Orientado a objetos</td>
+              </tr>
+              <tr>
+                <th>Popularidad</th>
+                <td>Alta</td>
+                <td>Muy alta</td>
+                <td>Alta</td>
+              </tr>
+            </tbody>
           </table>
         </section>
+
     
         <section id="referencias">
           <h2 class="subtitle">Referencias</h2>
@@ -256,15 +268,15 @@
           <article>
             <blockquote>
             "Diego demostró gran responsabilidad y compromiso en cada proyecto que lideró."  </blockquote>
-            <p><span>María Torres</span><br>
-            Gerente de Proyectos en XYZ Tech<br>
+            <p><span>Lorena Mercedes</span><br>
+            Gerente de Proyectos en Tech<br>
             Trabajé con Diego durante su pasantía, donde destacó por su iniciativa y habilidades técnicas.</p>  
           </article>
 
           <article>
             <blockquote>
             "Siempre dispuesto a aprender y colaborar, Diego fue un valioso miembro del equipo." </blockquote>
-            <p><span>Carlos Pérez</span><br>
+            <p><span>Jair Lozano</span><br>
             Líder de Desarrollo en Innovatech<br>
             Diego participó en el desarrollo de una API, mostrando creatividad y eficiencia.</p>         
           </article>
@@ -272,7 +284,7 @@
           <article>
             <blockquote>
             "Su ética profesional y atención al detalle son ejemplares."</blockquote>
-            <p><span>Lucía Ramírez</span><br>
+            <p><span>Fiorela Maldonado</span><br>
             Coordinadora de TI en Soluciones Digitales<br>
             Diego apoyó en la automatización de procesos, logrando excelentes resultados.</p>
           </article>
